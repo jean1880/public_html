@@ -1,0 +1,97 @@
+﻿tbody {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+table img {
+	display:block;
+
+	max-width:100%;
+	max-height:100%;
+}
+
+td {
+	max-width:400px;
+	text-align:center;
+}
+
+table, td, th {
+	border:1px black solid;
+	border-collapse:collapse;
+
+}
+
+table {
+	background-color:white;
+	margin:25px;
+	min-width:425px;
+	max-width:525px;
+	
+}
+
+a {
+	text-decoration:none;
+	display:block;
+	color:black;
+	padding:5px;
+}
+
+a:visited {
+	color:black;
+}
+
+thead th:hover {
+	-webkit-transition: all 200ms cubic-bezier(0.030, 0.465, 1.000, 0.300); 
+    -moz-transition: all 200ms cubic-bezier(0.030, 0.465, 1.000, 0.300); 
+    -ms-transition: all 200ms cubic-bezier(0.030, 0.465, 1.000, 0.300); 
+    -o-transition: all 200ms cubic-bezier(0.030, 0.465, 1.000, 0.300); 
+    transition: all 200ms cubic-bezier(0.030, 0.465, 1.000, 0.300); /* custom */
+
+	-webkit-transition-timing-function: cubic-bezier(0.030, 0.465, 1.000, 0.300); 
+	-moz-transition-timing-function: cubic-bezier(0.030, 0.465, 1.000, 0.300); 
+    -ms-transition-timing-function: cubic-bezier(0.030, 0.465, 1.000, 0.300); 
+    -o-transition-timing-function: cubic-bezier(0.030, 0.465, 1.000, 0.300); 
+    transition-timing-function: cubic-bezier(0.030, 0.465, 1.000, 0.300); /* custom */
+	background-color:#B1BDCF;
+}
+
+a.item_add {
+	min-width:85px;
+	max-width:90px;
+	max-height:25px;
+	padding-left:10px;
+	padding-right:10px;
+	margin-right:10px;
+	margin-left:10px;
+	border-radius:10px;
+	border:gray 1px solid;
+
+	
+	/* gradient backgrounds */
+	background: rgb(237,237,237); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMSUiIHN0b3AtY29sb3I9IiNlZGVkZWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZjdmN2Y3IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(237,237,237,1) 1%, rgba(247,247,247,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%,rgba(237,237,237,1)), color-stop(100%,rgba(247,247,247,1))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(237,237,237,1) 1%,rgba(247,247,247,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  rgba(237,237,237,1) 1%,rgba(247,247,247,1) 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(237,237,237,1) 1%,rgba(247,247,247,1) 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  rgba(237,237,237,1) 1%,rgba(247,247,247,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#f7f7f7',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+	
+	
+}
+
+a.item_add:hover {
+	/* gradient backgrounds */
+	background: rgb(178,178,178); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNiMmIyYjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZGJkYmRiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(178,178,178,1) 0%, rgba(219,219,219,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(178,178,178,1)), color-stop(100%,rgba(219,219,219,1))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(178,178,178,1) 0%,rgba(219,219,219,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  rgba(178,178,178,1) 0%,rgba(219,219,219,1) 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(178,178,178,1) 0%,rgba(219,219,219,1) 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  rgba(178,178,178,1) 0%,rgba(219,219,219,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2b2b2', endColorstr='#dbdbdb',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}

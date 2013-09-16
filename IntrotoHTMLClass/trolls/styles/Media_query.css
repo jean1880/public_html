@@ -1,0 +1,19 @@
+﻿@media only screen and (max-width:1250px) {
+div.image {
+	margin-left:auto;
+	margin-right:auto;
+}
+h3 {
+	text-align:center;
+}
+#content {
+	margin-left:auto;
+	margin-right:auto;
+}
+img.display {
+	float:none;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+}

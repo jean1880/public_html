@@ -1,0 +1,15 @@
+﻿div.image {
+
+	margin-left:46px;
+	margin-top:50px;
+	border:3px black inset;
+	width:450px; height:281px;
+	border-radius:10px;
+	background-image:url('../Images/Mini-Trolls.jpg');
+	background-repeat:no-repeat;
+}
+
+div.content {
+	padding:25px;
+}
+
