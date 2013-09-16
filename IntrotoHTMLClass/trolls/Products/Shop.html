@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<title>Trolls - Products</title>
+		<!-- Load style sheets -->
+		<link href="../styles/styles_main.css" rel="stylesheet" type="text/css">
+		<link href="../styles/styles_products.css" rel="stylesheet" type="text/css">
+		<link href="../styles/Menu.css" rel="stylesheet" type="text/css">
+		<!-- CSS script that applies styles depending upon screen size -->
+		<link href="../styles/Media_query.css" rel="stylesheet" type="text/css">
+		<!-- turn IE9s filter off to allow for css gradients-->
+		<!--[if gte IE 9]>
+		  <style type="text/css">
+		    .gradient {
+		       filter: none;
+		    }
+		  </style>
+		<![endif]-->
+		<!-- Javascript to sort table on click, designed by Stuart Langridge http://www.kryogenix.org/code/browser/sorttable/ -->
+		<script src="../scripts/sorttable.js"></script>
+		
+	
+	</head>
+	
+	<body>
+		<!-- Web page header -->
+		<header class="gradient">
+			<div id="header">
+				<h1>Trolls</h1>
+				<h2>COLLECT THEM ALL!</h2>
+			</div>
+		</header>
+		<!-- end header -->
+		
+		<!-- Main Navigation -->
+		<nav>
+			<ul>
+				<li><a href="Shop.html">Products</a></li>
+				<li><a href="../About.html">About</a></li>
+				<li><a href="../index.html">Home</a></li>
+			</ul>	
+		</nav>
+		<!-- End of navigation -->
+		
+		<!-- Main Content of page -->		
+		<article>
+			
+			<!-- Company logo -->
+			<img class="display" src="../Images/Funhouse.png" alt="Fun house logo">
+			
+			<!-- Product display table -->
+			<div id="content">
+				<h3>Products</h3>
+				<table class="sortable">
+					<!-- Table header -->
+					<thead>
+						<tr>
+							<th colspan="2">Price (CAN$)</th>
+							<th>Product</th>						
+						</tr>
+					</thead>
+					<!-- Table body -->
+					<tbody>
+					
+						<!-- Treasure Trolls display row -->
+						<tr>
+							<td><a href="Treasure_Troll.html"><img alt="Treasure Troll Image" src="../Images/Treasure-Trolls.jpg"></a></td>
+							<td class="item_price">$9.99<a class="item_add" href="../Purchase.html">Order</a></td>						
+							<th><a class="item_name" href="Treasure_Troll.html">Treasure Troll</a></th>							
+						</tr>
+						
+						<!-- Mini Trolls display row -->
+						<tr>
+							<td><a href="Mini_Trolls.html"><img alt="Mini-Trolls image" src="../Images/Mini-Trolls.jpg"></a></td>
+							<td>$5.99<a class="item_add" href="../Purchase.html">Order</a></td>						
+							<th><a href="Mini_Trolls.html">Mini Troll</a></th>
+						</tr>	
+					</tbody>
+					<tfoot>					
+					</tfoot>
+				</table>			
+			</div>
+			<!-- end of display table -->
+			
+		</article>
+		<!-- End of main content -->
+		
+		<!-- Footer of page -->
+		<footer>
+			<p>&copy; 2012 Fun House Toys</P>
+			<a id="contact" href="../Contact_Us.html">Contact-Us</a> 
+		</footer>
+		<!-- end of footer -->
+	</body>
+	
+</html>

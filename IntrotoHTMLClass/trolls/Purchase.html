@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<title>Fun House Toys - Purchase</title>
+		
+		<!-- Load Stylesheets -->
+		<link href="styles/styles_main.css" rel="stylesheet" type="text/css">
+		<link href="styles/Menu.css" rel="stylesheet" type="text/css">
+		
+		<!-- Special stylesheet to query media screen size -->
+		<link href="styles/styles_form.css" rel="stylesheet" type="text/css">
+		
+		<!-- disable IE9s filters to allow for CSS3 gradients -->
+		<!--[if gte IE 9]>
+		  <style type="text/css">
+		    .gradient {
+		       filter: none;
+		    }
+		  </style>
+		<![endif]-->
+		
+	</head>
+		
+	<body>
+		
+		<!-- Page Header -->
+		<header class="gradient">
+			<div id="header">
+				<h1>Trolls</h1>
+				<h2>COLLECT THEM ALL!</h2>
+			</div>
+		</header>
+		<!-- End of Header -->
+		
+		<!-- Main Navigation -->
+		<nav>
+			<ul>
+				<li><a href="Products/Shop.html">Products</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="index.html">Home</a></li>
+			</ul>	
+		</nav>
+		<!-- End of Navigation -->
+		
+		<!-- Main Content -->
+		<article>
+			<!-- Purchasing form -->
+			<form>
+				<!-- Shopping cart -->
+				<fieldset>
+					<legend>Shopping Cart</legend>
+					<div>
+						<input id="item_quantity" type="text" name="item_quantity" value="" class="required" />
+						<label class="required">Mini-Troll Order Quantity</label>
+					</div>
+					<div>
+						<input id="item_quantity2" type="text" name="item_quantity2" value="" class="required" />
+						<label class="required">Treasure-Troll Order Quantity</label>
+					</div>
+				</fieldset>
+				<!-- End of Shopping Cart -->
+				
+				<!-- Billing info -->
+				<fieldset>
+					<legend>Billing Address</legend>
+					<div>
+						<label for="fname" class="required">First Name</label>
+						<input id="fname" type="text" name="fname" value="" class="required" />
+					</div>
+					<div>
+						<label for="lname">Last Name</label>
+						<input id="lname" type="text" name="lname" value="" />
+					</div>
+					<div>
+						<label for="address">Address Line 1</label>
+						<input id="address" type="text" name="address" value="" />
+					</div>
+					<div>
+						<label for="address2">Address Line 2</label>
+						<input id="address2" type="text" name="address2" value="" />
+					</div>
+					<div>
+						<label for="province">Province</label>
+						<select id="province" name="province">
+							<option value="choose">chooseâ€¦</option>
+							<option value="AB">Alberta</option>
+							<option value="BC">British Colombia</option>
+							<option value="ON">Ontario</option>
+							<option value="MB">Manitoba</option>
+							<option value="NB">New Brunswick</option>
+							<option value="NL">Newfoundland</option>
+							<option value="NT">Northwest Territories</option>
+							<option value="NS">Nova Scotia</option>
+							<option value="NV">Nunavut</option>
+							<option value="PE">Prince Edward Island</option>
+							<option value="PQ">QuÃ©bec</option>
+							<option value="SK">Saskatchewan</option>
+							<option value="YK">Yukon Territory</option>
+						</select>
+					</div>
+					<div>
+						<label for="phone">Phone</label>
+						<input id="phone" type="text" name="phone" value="" />
+					</div>
+					<div>
+						<label for="email">Email</label>
+						<input id="email" type="text" name="email" value="" size="45" class="required email" />
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Credit Card Details</legend>
+					<fieldset>
+						<legend>Credit Card Type</legend>
+						<input type="radio" name="cctype" id="amex" value="amex" />
+						<label for="amex"><img src="Images/amex_logo.jpg" style="width:40px;height:40px" alt="American Express" /> American Express</label>
+						<input type="radio" name="cctype" id="mc" value="mc" />
+						<label for="mc"><img src="Images/mastercard_logo.gif" alt="MasterCard" /> MasterCard</label>
+						<input type="radio" name="cctype" id="visa" value="visa" />
+						<label for="visa"><img src="Images/Visa_logo.jpg" alt="VISA" /> VISA</label>
+					</fieldset>
+					<div>
+						<label for="ccnumber">Credit Card Number</label>
+						<input id="ccnumber" type="text" name="ccnumber" value="" />
+					</div>
+					<div>
+						<label for="ccexpireyear">Expiration Year</label>
+						<select name="ccexpireyear" id="ccexpireyear">
+							<option value="choose">choose...</option>
+							<option value="2012">2012</option>
+							<option value="2013">2013</option>
+							<option value="2014">2014</option>
+							<option value="2015">2015</option>
+							<option value="2016">2016</option>
+							<option value="2017">2017</option>
+							<option value="2018">2018</option>
+							<option value="2019">2019</option>
+						</select>
+					</div>
+					<div>
+						<label for="ccexpiremonth">Expiration Month</label>
+						<select name="ccexpiremonth" id="ccexpiremonth">
+							<option value="choose">choose...</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select>
+					</div>
+				</fieldset>
+				<!-- End of Billing info -->
+				
+				<!-- Subscription Query -->
+				<fieldset>
+					<legend>Keep Me Informed</legend>
+					<input type="checkbox" name="marketing" id="marketing1" value="newsletter" />
+					<label for="marketing1">Newsletter</label>
+					<input type="checkbox" name="marketing" id="marketing2" value="email_notifications" />
+					<label for="marketing2">Email Notifications</label>
+				</fieldset>
+				<!-- End of subscription form -->
+				
+				<!-- submission query -->
+				<input type="submit" value="Save Settings" />
+				<!-- end of query -->
+	
+			</form>
+		</article>
+		<!-- End of Content -->
+	
+		<!-- Page footer -->
+		<footer>
+				<p>&copy; 2012 Fun House Toys</P>
+				<a id="contact" href="../Contact_Us.html">Contact-Us</a> 
+		</footer>
+		<!-- End of footer -->
+	</body>
+
+</html>
