@@ -1,0 +1,35 @@
+html {
+	height:100%;
+	width:100%;
+}
+
+body {
+	background-color: rgba(222,224,254,1)
+}
+
+li {
+	list-style:none;
+	text-decoration:none;
+}
+.first {
+		width:auto;
+		display:block;
+		width: 150px;
+}
+.first:hover .second {
+	visibility:visible;
+}
+.first ul {
+	position:absolute;
+	margin-top:-20px;
+	margin-left:100px;
+}
+.second {
+	visibility:hidden;
+}
+.second:hover .third {
+	visibility:visible;	
+}
+.third {
+	visibility:hidden;
+}
