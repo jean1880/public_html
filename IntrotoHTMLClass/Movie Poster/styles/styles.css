@@ -1,0 +1,57 @@
+﻿/* Main CSS File for movie poster */
+/*
+Coded by: Jean-Luc Desroches
+Coded on: Dec 16/2012
+*/
+
+/* Center content on page and set font */
+body {
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	min-width:600px;
+}
+
+/* Transform heading all uppercase letters, and remove margins */
+h1.title {
+	text-transform:uppercase;
+	margin-top:0px;
+}
+
+/* Remove styling from list elements and set inline with elements */ 
+li {
+	list-style:none;
+	display:inline;
+	margin-left:0px;	
+}
+
+/* remove margins from unordered list */
+ul {
+	margin-left:-40px;
+	display:inline;
+}
+
+/* set list labels to uppercase */
+p {
+	text-transform:uppercase;
+	display:inline;
+}
+
+/* Center credits to viewport and set max-width */
+#credits {
+	display:block;
+	max-width:1100px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* set divisions within the 'credits' to appear inline */
+#credits div {
+	display:inline;
+	margin:0px;
+
+}
+
+/* remove quotations from movie quote */
+q {
+	quotes:none
+}
