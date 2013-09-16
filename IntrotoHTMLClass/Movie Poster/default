@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>Untitled 1</title>
+	<link href="styles/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<q>Who ya gonna call?</q>
+	<ul class="actors">
+		<li>Bill Murray</li>
+		<li>Dan Akroyd</li>
+		<li>Sigourney Weaver</li>
+	</ul>
+	<h1 class="title">Ghostbusters</h1>
+	<div id="credits">
+		<ul class="studio">
+			<li>Columbia Pictures</li>
+		</ul>
+		<ul class="director">
+			<li>Ivan Reitman</li>
+		</ul>
+		<ul class="production_by">
+			<li>Black Rhino/Bernie Brillstein</li>
+		</ul>
+		<ul class="actors">
+			<li>Bill Murray</li>
+			<li>Dan Akroyd</li>
+			<li>Sigourney Weaver</li>
+		</ul>
+		<ul class="title">
+			<li>Ghostbusters</li>
+		</ul>
+		<ul class="co-actors">
+			<li>Harold Ramis</li>
+			<li>Rick Moranis</li>
+		</ul>
+		<ul class="music">
+			<li>Elmer Bernstein</li>
+		</ul>
+		<ul class="theme_artist">
+			<li>Ray Parker, Jr.</li>
+		</ul>
+		<ul class="production_design">
+			<li>John De Cuir</li>
+		</ul>
+		<ul class="director_photography">
+			<li>Laszlo Kovacs, ASC</li>
+		</ul>
+		<ul class="visual_effects">
+			<li>Richard Edlund, ASC</li>
+		</ul>
+		<ul class="executive_producer">
+			<li>Bernie Brillstein</li>
+		</ul>
+		<ul class="writers">
+			<li>Dan Akroyd</li>
+			<li>Harold Ramis</li>
+		</ul>
+		<ul class="producer">
+			<li>Ivan Reitman</li>
+		</ul>
+	</div>
+	<h2>Back in theatre - October 2011</h2>
+	<a href="https://www.facebook.com/Ghostbusters">Facebook.com/Ghostbusters</a>"
+</body>
+
+</html>

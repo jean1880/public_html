@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html>
+
+<!--Assignment 3
+Coded by: Jean-Luc Desroches
+-->
+
+<head>
+<!--Set-up basics of page for the browser declaring language and importing the CSS file--> 
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<link href="DATA/styles.css" rel="stylesheet" type="text/css">
+<title>Weather Network</title>
+<!--set css file to not load filter when internet explorer 9 is detected-->
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+</head>
+
+<body>
+	<!--make a head banner for the page-->
+	<header class="banner">
+		<h1>Live Weather.com</h1>
+		<p>Current weather for Barrie, Ontario</p>
+		
+	</header>
+	<!--begin the navigation menu-->
+	<nav>
+		<!--set up a division for the weather tab of the menu-->
+		<div id="weather">
+			<ul class="first"> 
+				<!--Content of menu heading-->
+				<li class="first"><a href="">Weather</a></li>
+					<!--begin containing sub-menu-->
+					<ul class="second">
+						<li class="second"><a href="">Local Weather</a></li>
+						<li class="second"><a href="">Hourly Forecast</a></li>
+						<li class="second"><a href="">14 Day Trend</a></li>
+						<li class="second"><a href="">Last 24 hours</a></li>
+						<li class="second"><a href="">Watches &amp; Warnings<a/></li>
+						<li class="second"><a href="">Weather Maps</a></li>
+						<li class="second"><a href="">Satellite &amp; Radar Maps</a></li>
+						<li class="second"><a href="">Lightning Maps</a></li>
+						<li class="second"><a href="">Statistics</a></li>
+						<li class="second"><a href="">Sun &amp; Normals</a></li>
+						<li class="second"><a href="">Sun, Moon &amp; Seasons</a></li>
+						<li class="second"><a href="">Tropical Storm Centre</a></li>
+						<li class="second"><a href="">Video On Demand</a></li>
+						<li class="second"><a href="">Weather Cameras</a></li>
+						<li class="second"><a href="">Your Weather Gallery</a></li>
+					</ul>
+			</ul>
+		</div>
+		<!--set up a division for the travel tab of the menu-->
+		<div id="travel">
+			<ul class="first">
+				<!--Content of menu heading-->
+				<li class="first"><a href="">Travel</a></li>
+					<!--begin containing sub-menu-->
+					<ul class="second">
+						<li class="second"><a href="">Airport Forecast</a></li>
+						<li class="second"><a href="">Attractions</a></li>
+						<li class="second"><a href="">Flight Tracker</a></li>
+						<li class="second"><a href="">Sunshine Destinations</a></li>
+						<li class="second"><a href="">Travel Information</a></li>
+						<li class="second"><a href="">Vacation Bound (New)</a></li>
+					</ul>
+			</ul>
+		</div>
+		<!--set up a division for the roads tab of the menu-->
+		<div id="roads">	
+			<ul class="first">
+				<!--Content of menu heading-->
+				<li class="first" ><a href="">Roads</a></li>
+					<!--begin containing sub-menu-->
+					<ul class="second">
+						<li class="second"><a href="">Canadian Highway Forecast</a></li>
+						<li class="second"><a href="">Highway Conditions</a></li>
+						<li class="second"><a href="">Road Construction</a></li>
+						<li class="second"><a href="">Traffic Cameras</a></li>
+						<li class="second"><a href="">Traffic Flow</a></li>
+						<li class="second"><a href="">USA Highway Forecast</a></li>
+						<li class="second"><a href="">Driving TipsNew</a></li>
+						<li class="second"><a href="">Weather &amp; Your Car (New)</a></li>
+					</ul>
+			</ul>
+		</div>
+		<!--set up a division for the roads tab of the menu-->
+		<div id="gardens">
+			<ul class="first">
+				<!--Content of menu heading-->
+				<li class="first" ><a href="">Home &amp; Gardens</a></li>
+					<!--begin containing sub-menu-->
+					<ul class="second">
+						<li class="second"><a href="">Lawn &amp; Garden Forecast</a></li>
+						<li class="second"><a href="">Lawn &amp; Garden Tips (New)</a></li>
+						<li class="second"><a href="">Pets &amp; Weather (New)</a></li>
+						<li class="second"><a href="">Power Consumption</a></li>
+						<li class="second"><a href="">Weather &amp; Your Home</a></li>
+						<li class="second"><a href="">Weather &amp; Your Home Tips (New)</a></li>
+					</ul>
+			</ul>
+		</div>
+		<!--set up a division for the roads tab of the menu-->
+		<div id="activities">
+			<ul class="first">
+				<!--Content of menu heading-->
+				<li class="first" ><a href="">Activities</a></li>
+					<!--begin containing sub-menu-->
+					<ul class="second">
+						<li class="second"><a href="">Dog Park Report</a></li>
+						<li class="second"><a href="">Facts of Fishing</a></li>
+						<li class="second"><a href="">FarmZone</a></li>
+						<li class="second"><a href="">Golf Report</a></li>
+						<li class="second"><a href="">Great Outdoors</a></li>
+						<li class="second"><a href="">Marine Forecast</a></li>
+						<li class="second"><a href="">Park Report</a></li>
+						<li class="second"><a href="">SchoolDay Forecast</a></li>
+						<li class="second"><a href="">Ski Report</a></li>
+						<li class="second"><a href="">Snowmobile Report</a></li>
+						<li class="second"><a href="">Stargazing</a></li>
+					</ul>
+			</ul>
+		</div>
+		<!--set up a division for the roads tab of the menu-->
+		<div id="health">
+			<ul class="first">
+				<!--Content of menu heading-->
+				<li class="first" ><a href="">Health &amp; Environment</a></li>
+					<!--begin containing sub-menu-->
+					<ul class="second">
+						<li class="second"><a href="">Aches &amp; Pains</a></li>
+						<li class="second"><a href="">Air Quality</a></li>
+						<li class="second"><a href="">Bug Report</a></li>
+						<li class="second"><a href="">Climate Change</a></li>
+						<li class="second"><a href="">Flu Report</a></li>
+						<li class="second"><a href="">Forest Fire Watch</a></li>
+						<li class="second"><a href="">Pollen Report</a></li>
+						<li class="second"><a href="">Under the Weather (New)</a></li>
+						<li class="second"><a href="">UV Report</a></li>
+					</ul>
+			</ul>
+		</div>
+	</nav>
+	<!--Begin main body of content-->
+	<article>
+		<!--make a division within article for the body of content-->
+		<div class="content">
+			<!--subdivide first section into news-->
+			<div class="news">
+				<h3>Current News</h3>
+				<!--junk text-->
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pharetra vehicula tortor. Sed vel tortor sed turpis iaculis auctor. Pellentesque eu neque ut massa 
+				vulputate venenatis. Nunc sit amet urna vel elit ullamcorper mattis. Morbi posuere est et libero porttitor ac porta lectus vulputate. Nunc a risus eget magna dapibus
+				bibendum. Aenean dui nibh, aliquam congue vestibulum a, imperdiet ut magna. Nam rhoncus, nulla vel tempus pulvinar, purus nibh iaculis sem, et mattis enim nibh quis
+				eros. Vestibulum sed lobortis tellus.</p>
+				<p>Morbi rutrum turpis eget odio pharetra ultrices. Pellentesque ut lobortis augue. Mauris condimentum velit ut massa porta faucibus. Donec vestibulum erat sed magna 
+				pretium in condimentum purus laoreet. Phasellus id diam diam, eleifend venenatis turpis. Curabitur consequat, velit iaculis porta sollicitudin, lacus lectus vestibulum
+				mi, at lacinia justo mauris at orci. Morbi feugiat libero eu tellus pretium non convallis libero aliquet.</p>
+				<!--image curtesy of GTD Aquitaine, from wikipedia, released under public domain-->  
+				<img alt="Image of Barrie's Spirit Catcher" src="DATA/Wikispirit.jpg">
+				<p>Vivamus eget nulla risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam erat felis, facilisis vitae fringilla id, porttitor ut odio. Phasellus 
+				lobortis, orci ut luctus molestie, turpis libero pretium quam, quis posuere magna massa sed neque. Vestibulum at orci libero, id auctor nulla. Phasellus at libero quis
+				leo condimentum sagittis. Sed tortor justo, gravida sit amet volutpat eget, condimentum sit amet mauris.</p>
+				<p>Nulla quis nunc ac libero tincidunt semper in in diam. Aliquam posuere, sem a sollicitudin venenatis, mi leo viverra metus, ut porta ligula enim quis leo. Ut blandit,
+				elit nec interdum pulvinar, diam erat luctus sem, eu tempor justo velit in arcu. Quisque lacinia vulputate arcu eget iaculis. Maecenas luctus urna sit amet tortor
+				pretium mattis. Nunc tincidunt placerat elit vitae porttitor. Fusce sem mauris, lobortis in pretium non, fermentum at est. Nullam nunc arcu, porta in convallis at,
+				tincidunt ac ante. Quisque cursus porttitor tortor, vitae elementum nisi pulvinar et. Maecenas sit amet ante mi.</p>
+			</div>
+			<div class="news">
+				<h3>Weather News</h3>
+				<!--junk text-->
+				<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut a lacus augue, sed rutrum massa. Ut a mi id dolor varius euismod. Aliquam
+				 in turpis dui. Vestibulum venenatis ipsum erat. Fusce mi libero, viverra a commodo quis, elementum eget dui. Curabitur a leo nec est condimentum adipiscing. Integer at 
+				 metus nisi. Aenean eu enim erat, in porta purus.</p>
+				 <!--image curtesy of Lipton Sale, released under GNU Free Documentation Licence-->
+				 <img alt="Clouds in blue sky" src="DATA/640px-Stormclouds.jpg">
+				 <p>Mauris eleifend feugiat euismod. Proin gravida metus in urna consectetur non rhoncus dui ornare. Sed mattis, odio at lobortis gravida, augue est interdum nulla, quis 
+				 iaculis mauris lacus ac purus. Integer mi quam, vehicula eu elementum sed, iaculis in dolor. Vestibulum laoreet ullamcorper scelerisque. Praesent viverra rutrum volutpat. 
+				 Morbi quis lectus non odio volutpat dapibus. Pellentesque massa ipsum, venenatis a elementum a, laoreet non odio. In ac nisl a libero lacinia hendrerit sed commodo neque. 
+				 Phasellus lobortis metus quis mi vulputate consequat. Phasellus elit quam, placerat quis varius vel, molestie ac mauris. In a lacinia massa. Donec pharetra, tellus ac varius 
+				 viverra, magna velit gravida lectus, molestie posuere ligula metus eu elit. Sed eget metus vitae felis placerat suscipit. Aenean convallis rutrum sodales.</p>
+				 <p>Praesent tellus turpis, imperdiet vel elementum vel, consequat quis tellus. Aliquam eu est vel sapien semper malesuada a sed nunc. Aliquam sollicitudin, purus ut pharetra 
+				 bibendum, nulla ligula rhoncus nulla, et facilisis purus augue sit amet lectus. Phasellus posuere sollicitudin felis, vitae dictum mi sagittis vitae. Nam eu sem ut nisl 
+				 sollicitudin tempus at eu diam. In libero massa, semper vel consequat eu, auctor in sem. Suspendisse ut nibh sem. Sed ullamcorper turpis nec massa iaculis convallis quis 
+				 quis nulla. Vivamus tincidunt, sapien sit amet ornare luctus, quam sapien aliquam nibh, a ornare metus nunc nec sapien. Suspendisse potenti. Pellentesque non facilisis dui. 
+				 Nunc sed neque ac nibh rhoncus faucibus eget at est. Maecenas leo urna, iaculis scelerisque dapibus pulvinar, tempor eget sem.</p>
+				 <p>Nullam cursus, sem ut hendrerit cursus, sapien arcu volutpat sapien, et rutrum est tortor ut augue. Quisque ut metus neque. Aliquam non lorem vel nisi accumsan sodales. 
+				 Maecenas ultricies condimentum lorem vel dignissim. Phasellus pharetra odio non elit bibendum lacinia. Etiam in risus ac tortor mollis bibendum. Pellentesque condimentum 
+				 nulla non enim venenatis placerat. Curabitur ullamcorper volutpat tellus sed varius.</p>
+				 <p>Etiam imperdiet hendrerit mi, eu consequat libero congue a. Mauris a mauris eros, vitae ultricies urna. In ut est tellus. Duis est justo, congue in laoreet ut, condimentum 
+				 eget ante. Curabitur orci nibh, dignissim et sagittis ut, cursus eget nunc. Donec vitae massa erat. Aliquam sed turpis massa. Suspendisse luctus placerat accumsan. 
+				 Suspendisse dignissim, est vitae dignissim rutrum, massa ligula venenatis justo, quis aliquet nisl urna eget tellus. Aliquam erat turpis, imperdiet ac fermentum nec, 
+				 congue vel est. Cras consequat pretium sapien vitae fringilla. Nullam a urna ac quam fermentum tincidunt at ut risus. Curabitur lacinia, mauris in faucibus euismod, orci 
+				 turpis elementum augue, non auctor leo turpis vitae elit. Fusce mollis quam sit amet purus condimentum a eleifend nunc tincidunt. Nulla facilisi.</p>
+				 <p>Vestibulum sit amet dolor non nunc congue placerat ac et tortor. Sed venenatis nulla vel urna elementum volutpat. Mauris aliquet eleifend lectus, at porttitor 
+				 mauris rhoncus sed. Maecenas faucibus ligula non augue hendrerit faucibus. Fusce scelerisque hendrerit augue quis porta. Nulla quis ullamcorper odio. Mauris vitae 
+				 est sed felis sagittis condimentum eu at eros. Aenean vulputate varius tellus, id scelerisque metus mattis vitae. Vivamus vitae lorem porta orci malesuada rutrum. 
+				 Praesent ullamcorper sollicitudin eleifend. Nunc pulvinar sapien in neque iaculis tincidunt.</p>
+			</div>
+		</div>
+	</article>
+</body>
+
+</html>
