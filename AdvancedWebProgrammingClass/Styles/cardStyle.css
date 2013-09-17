@@ -1,0 +1,23 @@
+/* CSS Document */
+#card
+{
+	padding:15px;
+	border:2px solid black;
+	border-radius:15px;
+}
+#border
+{
+	padding:10px;
+	background:#B3DBFF;
+}
+
+#card img
+{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+#description
+{
+	background-color:white;
+}

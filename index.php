@@ -1,10 +1,10 @@
 <?php
-	include('DATA/Header.php');	
- ?>
+	include('DATA/HeaderOpen.php');	
+	include('DATA/HeaderClose.php');
+ ?>        
+    <section>
         
-        <section>
-            
-        </section>
-    </body>
-
-</html>
+    </section>
+<?php
+	include('DATA/Footer.php');
+?>
