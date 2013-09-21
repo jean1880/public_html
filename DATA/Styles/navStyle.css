@@ -3,24 +3,47 @@ li
 {
 	list-style:none;
 }
+body
+{
+	border:medium black solid;
+	background:#D6D6D6;
+	margin-top:0;
+	top:-2px;
+}
+nav
+{
+	display:block;	
+	position:relative;
+	background: #424242;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	top:-18px;
+	height:30px;
+}
+nav a
+{
+	text-decoration:none;
+	color:white;
+}
 .first
 {
-	color: red;
+	color: white;
 	width:150px;
+	display:inline-block;
 }
 .second, .third
 {
-	visibility:hidden;
 	display:none;
-	float:right;
+	background: #424242;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
 }
 
 .first:hover .second
 {
 	visibility:visible;
-	display:inline-block;
+	display:block;
 	position:absolute;
-	left:150px;
 }
 
 .secondList:hover .third

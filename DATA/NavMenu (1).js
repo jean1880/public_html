@@ -4,7 +4,7 @@ $(document).ready(function() {
 		if($(this).siblings('ul').css('display')== 'none')
 		{
 			$this = $(this);
-			$(this).closest('nav').each('ul').not($this.siblings('ul')).fadeOut(250);
+			$(this).closest('nav').each('ul').not($this.siblings('ul'))fadeOut(250);
 			$(this).siblings('ul').fadeIn(250);
 		}
 		else

@@ -3,7 +3,7 @@
 ?>
 <nav>
             <ul >
-                <li class='first'>Project Websites
+                <li class='first'><span>Project Websites</span>
                     <ul class='second'>
                         <li class='secondList' id="IntrotoHTMLClass" ><a href='IntrotoHTMLClass/index.php'>Semester 1 - Intro to Html</a>
                         	<ul class="third">
@@ -61,7 +61,7 @@
                     	</li>
 					</ul>
                 </li>
-                <li class='first'>Personal Documents
+                <li class='first'><span>Personal Documents</span>
                     <ul class='second'>
                         <li class='secondList'><a>Resume</a>
                         	<ul class='third'>
