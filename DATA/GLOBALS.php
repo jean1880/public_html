@@ -7,6 +7,10 @@
 		return array(
 				'.',
 				'..',
+				'Styles',
+				'DATA',
+				'images',
+				'photos',
 				'index.php'
 			);
 	}

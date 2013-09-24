@@ -1,23 +1,36 @@
 /* CSS Document */
-
+#padding
+{
+	padding-right:25px;
+	padding-left:25px;
+}
 #card
 {
 	padding:15px;
 	background:white;
 	border:2px solid black;
 	border-radius:15px;
-	display:inline-block;
-	width:80%;
+	display:block;
+	width:550px;
+	height:750px;
 	margin-left:auto;
 	margin-right:auto;
+	margin-bottom:25px;
 }
 #border
 {
 	padding:10px;
 	padding-bottom:50px;
 	background:#B3DBFF;
+	height:685px;
 }
-
+#text
+{
+	height:160px;
+	padding:15px;
+	padding-top:50px;
+	vertical-align:middle;
+}
 #card img
 {
 	display:block;
@@ -29,12 +42,16 @@
 {
 	background-color:white;
 }
-#cost p, #cost section
+#cost, #lvl
 {
 	display:inline-block;
-	width:100px;
+	width:48%;
 }
-#lvl, #stats
+#stats
 {
-	display: inline-block;
+	float:right;
+}
+#lvl
+{
+	text-align:right;
 }

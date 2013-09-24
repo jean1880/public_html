@@ -1,12 +1,44 @@
 /* CSS Document */
-li
+nav ul
+{
+	padding:0;
+	margin:0;
+}
+nav li
 {
 	list-style:none;
 	text-align:center;
+	display:block;
 	font-size:34px;
-	margin:0;
-	margin-right:30px;
-	padding:0;
+	margin:10px;
+	padding:5px;
+	color:white;
+	border:thin solid #616161;
+	border-radius:8px;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+nav li:hover
+{
+	cursor:pointer;
+}
+
+nav li span
+{
+	width:95%;
+	display:block;	
+	background:#616161;
+	border-radius:8px;
+	padding:20px;
+	margin-right:auto;
+	margin-left:auto;
+}
+nav a
+{
+	text-decoration:none;
+	color:white;
 }
 .second, .third
 {
@@ -19,9 +51,11 @@ nav
 	margin-left:auto;
 	margin-right:auto;
 	display:block;
-	width:45%;
+	width:65%;
 	border:thin black solid;
 	border-radius:15px;
+	background:#424242;
+	margin-bottom:10px;
 }
 /* Smartphones (portrait and landscape) ----------- */
 @media 

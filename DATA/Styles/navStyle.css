@@ -9,6 +9,7 @@ body
 	background:#D6D6D6;
 	margin-top:0;
 	top:-2px;
+	min-width:500px;
 }
 nav
 {
@@ -18,9 +19,20 @@ nav
 	border-bottom-left-radius:5px;
 	border-bottom-right-radius:5px;
 	top:-18px;
-	height:30px;
+	height:35px;
+}
+nav ul
+{
+	padding-top:5px;
 }
 nav a
+{
+	text-decoration:none;
+	color:white;
+	display:block;
+	width:100%;
+}
+a:visited
 {
 	text-decoration:none;
 	color:white;
@@ -30,6 +42,11 @@ nav a
 	color: white;
 	width:150px;
 	display:inline-block;
+	text-align:center;
+}
+nav span
+{
+	width:100%;
 }
 .second, .third
 {
@@ -37,18 +54,48 @@ nav a
 	background: #424242;
 	border-bottom-left-radius:5px;
 	border-bottom-right-radius:5px;
+	list-style:none;
+	padding:5px;
+	padding-top:0;
+	margin:0;
+	width:300px;
+	text-align:center;
+	visibility:hidden;
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	-o-transition: all 2s ease;
+	transition: all 2s ease;
 }
-
-.first:hover .second
+.third{
+	position:relative;
+	left:300px;
+	border-top-right-radius:5px;
+}
+.first:hover, .secondList:hover, .third li:hover
 {
-	visibility:visible;
+   	background-color:#616161;
+	cursor:pointer;
+}
+.first:hover .second
+{	
 	display:block;
 	position:absolute;
-}
-
-.secondList:hover .third
-{
 	visibility:visible;
+}
+.secondList:hover .third
+{	
 	display:inline-block;
 	position:absolute;
+	visibility:visible;
+}
+#myLogo
+{
+	display:inline-block;
+	float:right;
+	width:30px;
+	height:30px;
+	position:relative;
+	right:5px;
+	top:-3px;
 }

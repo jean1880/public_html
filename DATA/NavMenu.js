@@ -1,15 +1,17 @@
 // JavaScript Document
 $(document).ready(function() {
-    $('li span').click(function(){
-		if($(this).siblings('ul').css('display')== 'none')
+    $('nav span').click(function(){
+		var nextUl = $(this).next('ul');
+		$(this).siblings().each(function(){
+			$(this).not(nextUl).fadeOut(250);
+		});
+		if($(this).next('ul').css('display') == 'none')
 		{
-			$this = $(this);
-			$(this).closest('nav').each('ul').not($this.siblings('ul')).fadeOut(250);
-			$(this).siblings('ul').fadeIn(250);
+			$(this).next('ul').fadeIn(250);
 		}
 		else
 		{
-			$(this).siblings('ul').fadeOut(250);
+			$(this).next('ul').fadeOut(250);
 		}
 	});
 });
