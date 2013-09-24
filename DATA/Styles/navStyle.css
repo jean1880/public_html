@@ -3,21 +3,13 @@ li
 {
 	list-style:none;
 }
-body
-{
-	border:medium black solid;
-	background:#D6D6D6;
-	margin-top:0;
-	top:-2px;
-	min-width:500px;
-}
 nav
 {
 	display:block;	
 	position:relative;
 	background: #424242;
-	border-bottom-left-radius:5px;
-	border-bottom-right-radius:5px;
+	border-bottom-left-radius:75px 5px;
+	border-bottom-right-radius:75px 5px;
 	top:-18px;
 	height:35px;
 }
@@ -43,6 +35,11 @@ a:visited
 	width:150px;
 	display:inline-block;
 	text-align:center;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
 }
 nav span
 {
@@ -61,11 +58,20 @@ nav span
 	width:300px;
 	text-align:center;
 	visibility:hidden;
-	-webkit-transition: all 2s ease;
-	-moz-transition: all 2s ease;
-	-ms-transition: all 2s ease;
-	-o-transition: all 2s ease;
-	transition: all 2s ease;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+.secondList, .third li
+{
+	
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
 }
 .third{
 	position:relative;
@@ -89,6 +95,7 @@ nav span
 	position:absolute;
 	visibility:visible;
 }
+
 #myLogo
 {
 	display:inline-block;
@@ -96,6 +103,23 @@ nav span
 	width:30px;
 	height:30px;
 	position:relative;
-	right:5px;
+	right:35px;
 	top:-3px;
+}
+#currentLocation
+{
+	position:relative;
+	display:inline-block;
+	margin:0;
+	padding:0;
+	height:20px;
+	float:right;
+	right:45px;
+}
+#currentLocation p
+{
+	color:white;
+	margin:0;
+	padding:0;
+	display:block;
 }

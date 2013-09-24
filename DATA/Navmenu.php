@@ -19,7 +19,7 @@
                                 if(!in_array($filename,nonReturnList()))
                                 {
                                 ?>
-                                    <li><a href="<?php echo URL.$url.$filename ?>"><?php echo $filename ?></a></li>
+                                    <li><a href="<?php echo URL.$url.$filename ?>"><?php echo fileStripper($filename) ?></a></li>
                                 <?php
                                 }
                             }
@@ -37,7 +37,7 @@
                                 if(!in_array($filename,nonReturnList()))
                                 {
                                 ?>
-                                    <li><a href="<?php echo URL.$url.$filename ?>"><?php echo $filename ?></a></li>
+                                    <li><a href="<?php echo URL.$url.$filename ?>"><?php echo fileStripper($filename) ?></a></li>
                                 <?php
                                 }
                             }
@@ -55,7 +55,7 @@
                                 if(!in_array($filename,nonReturnList()))
                                 {
                                 ?>
-                                    <li><a href="<?php echo URL.$url.$filename ?>"><?php echo $filename ?></a></li>
+                                    <li><a href="<?php echo URL.$url.$filename ?>"><?php echo fileStripper($filename) ?></a></li>
                                 <?php
                                 }
                             }
@@ -84,8 +84,18 @@
                 </li>
                 
             </ul>
-        </li>
+        </li>        
         <img id="myLogo" src="<?php echo URL.'DATA/images/logo.png' ?>" alt="My Logo"/>
+        <div id="currentLocation">
+        	<?php 
+				$location 	= str_replace(HOME_DIR, '', $_SERVER["SCRIPT_FILENAME"]); 
+				$breadCrumb = explode('/',$location);
+				foreach($breadCrumb as $file)
+				{					
+					echo '<p>'.fileStripper($file).'</p>';
+				}
+			?>
+        </div>
     </ul>
     
 </nav>

@@ -3,7 +3,8 @@
     <head>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>Various Projects</title>
-        
+        <link rel="stylesheet" href="nivo-slider.css" type="text/css" />
+		<script src="jquery.nivo.slider.pack.js" type="text/javascript"></script>
         <script type="text/javascript" language="javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script type="text/javascript" language="javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>   
         
@@ -24,7 +25,7 @@
 			}
 			else
 			{
-				
+				echo '<link href="'.URL.'DATA/Styles/mainStyles.css" rel="stylesheet" type="text/css">';
                 echo '<link href="'.URL.'DATA/Styles/navStyle.css" rel="stylesheet" type="text/css">';
                 
 			}
