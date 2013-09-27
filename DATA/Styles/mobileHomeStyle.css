@@ -1,14 +1,19 @@
 /* CSS Document */
-#wrapper
+
+#section 
 {
-	background:#222;
+	display:block;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+	background:white;
+	border:black solid medium;
+	border-radius:10px;
 }
 .slider-wrapper
 {
 	max-height:600px;
-	max-width:1000px;
-	margin-left:auto;
-	margin-right:auto;
 }
 #slider
 {	
@@ -36,9 +41,4 @@ h1
 	max-width:1000px;
 	margin-left:auto;
 	margin-right:auto;
-}
-#content a, #content a:visited
-{
-	color:black;
-	font-weight:bold;
 }

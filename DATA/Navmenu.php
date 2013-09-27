@@ -85,14 +85,18 @@
                 
             </ul>
         </li>        
-        <img id="myLogo" src="<?php echo URL.'DATA/images/logo.png' ?>" alt="My Logo"/>
+        <img id="myLogo" src="<?php echo URL.'DATA/Logos/logoThumb.png' ?>" alt="My Logo"/>
         <div id="currentLocation">
         	<?php 
 				$location 	= str_replace(HOME_DIR, '', $_SERVER["SCRIPT_FILENAME"]); 
 				$breadCrumb = explode('/',$location);
-				foreach($breadCrumb as $file)
+				foreach($breadCrumb as $key => $file)
 				{					
-					echo '<p>'.fileStripper($file).'</p>';
+					echo '<a href="'.URL.$location.'" class="breadCrumb" >'.fileStripper($file).'</a>';
+					if(!empty($breadCrumb[$key+1]))
+					{
+						echo '<p class="breadCrumb"> > </p>';
+					}
 				}
 			?>
         </div>

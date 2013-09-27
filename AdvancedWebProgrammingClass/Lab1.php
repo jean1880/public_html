@@ -1,6 +1,9 @@
 <?php
 	require_once('/home/200176338/public_html/DATA/HeaderOpen.php');
 	$mobile = mobileCheck::checkBrowser();
+	?>
+    <title>Advanced Web Programming - Lab 1</title>
+    <?php
 	
 	// Output style sheets between header files, if mobile add the mobile modifying css
 	echo '<link href="Styles/cardStyle.css" rel="stylesheet" type="text/css">';
@@ -32,11 +35,11 @@
                 <p id="stats">
                     &#8734; / *
                 </p>
-            </span>  
-            
-        <div>
+            </span>             
+        </div>
     </div>
 </div>
+<p id="center">This page demonstrates adaptive design, making use of a browsers user string to identify whether they are on a mobile device or desktop</p>
 <?php
-	require_once('/home/200176338/public_html/DATA/Footer.php');
+	require_once(HOME_DIR.'DATA/Footer.php');
 ?>

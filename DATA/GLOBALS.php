@@ -8,7 +8,8 @@
 		$pregArray = array(
 			"/.php$/",
 			"/.css$/",
-			"/.html$/"
+			"/.html$/",
+			"/.jpg$/"
 		);
 		
 		$fileNames = array(
@@ -20,6 +21,27 @@
 		
 		return array_key_exists($name,$fileNames) ? $fileNames[$name]:$name;		
 	}
+	
+	function sliderURLS($fileName)
+	{
+		switch ($fileName)
+		{
+			case "forum":
+				return URL."WebProgrammingClass/forum/";
+			case "Live Weather":
+				return URL."IntrotoHTMLClass/Assignment%203/";
+			case "trolls":
+				return URL."IntrotoHTMLClass/trolls/";
+			case "me":
+				return URL."index.php";
+			case "comments":
+				return URL."WebProgrammingClass/PHPAssignment2/";
+			default:
+				return "$fileName";
+		}
+	}
+	
+	
 	function nonReturnList()
 	{
 		return array(

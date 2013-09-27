@@ -1,4 +1,33 @@
 /* CSS Document */
+html
+{
+	margin:0;
+}
+body
+{
+	border:medium black solid;
+	background:#D6D6D6;
+	top:-4px;
+	min-width:700px;
+	margin:0
+}
+#header
+{
+	background:#222;
+	color:white;
+	padding:5px;
+}
+#section 
+{
+	display:block;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+	background:white;
+	border:black solid medium;
+	border-radius:10px;
+}
 li
 {
 	list-style:none;
@@ -7,11 +36,12 @@ nav
 {
 	display:block;	
 	position:relative;
-	background: #424242;
+	background: #222;
 	border-bottom-left-radius:75px 5px;
 	border-bottom-right-radius:75px 5px;
 	top:-18px;
 	height:35px;
+	z-index:10;
 }
 nav ul
 {
@@ -48,7 +78,7 @@ nav span
 .second, .third
 {
 	display:none;
-	background: #424242;
+	background: #222;
 	border-bottom-left-radius:5px;
 	border-bottom-right-radius:5px;
 	list-style:none;
@@ -116,10 +146,11 @@ nav span
 	float:right;
 	right:45px;
 }
-#currentLocation p
+.breadCrumb
 {
 	color:white;
 	margin:0;
 	padding:0;
-	display:block;
+	padding-left:5px;
+	display:inline-block;
 }
