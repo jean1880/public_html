@@ -18,13 +18,3 @@
 	max-height:500px;
 	padding-bottom:20px;
 }
-#section a, #section a:visited
-{
-	color:black;
-	font-weight:bold;
-}
-#section p
-{
-	margin-left:20px;
-	margin-right:20px;
-}

@@ -4,7 +4,7 @@
 <nav>
     <ul >
         <li class='first' >
-            <span><a href="<?php echo URL.'index.php' ?>">Home</a></span>
+            <span><a href="<?php echo URL.'index.php' ?>" itemprop="url">Home</a></span>
         </li>
         <li class='first'><span>Project Websites</span>
             <ul class='second'>
@@ -85,6 +85,9 @@
                 
             </ul>
         </li>        
+        <li class='first'>
+        	<a href="<?php echo URL.'about-me.php' ?>">About Me</a>
+        </li>
         <img id="myLogo" src="<?php echo URL.'DATA/Logos/logoThumb.png' ?>" alt="My Logo"/>
         <div id="currentLocation">
         	<?php 

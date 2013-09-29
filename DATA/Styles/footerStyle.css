@@ -20,5 +20,13 @@ footer a, footer a:visited
 }
 #linkedin
 {
-	margin-left:10px;
+	position:relative;
+	margin-left:40px;
+	right:25px;
+}
+.g-person
+{
+	display:inline-block;
+	margin-left:20px;
+	float:right
 }

@@ -13,7 +13,7 @@
 	}
 	else
 	{
-		echo '<style rel="stylesheet" href="DATA/Styles/homeStyle.css" type="text/css" ></style>';
+		echo '<link href="'.URL.'DATA/Styles/homeStyles.css" rel="stylesheet" type="text/css">';
 	}
 
 	include('DATA/HeaderClose.php');
@@ -22,6 +22,7 @@
         <h1 id="header">Jean-Luc Desroches' Portfolio</h1>
         <div id="wrapper">
             <div class="slider-wrapper theme-dark">
+            	<h1 id="header">Previous Projects</h1>
                 <div id="slider" class="nivoSlider">
                     <?php
                         $url		= 'DATA/images/';
@@ -46,7 +47,7 @@
         </div>
         <div id="content">
             <h2>Welcome</h2>
-            <p>This is my personal portfolio site, please feel free to peruse my work, as well you may also view my <a href="<?php echo URL.'Personal/Jean-Luc_Desroches_Resume_2013.pdf' ?>">Resume</a>, or contact me via email <a href="mailto:jean1880@hotmail.com">jean1880@hotmail.com</a>.</p>
+            <p>This is my personal portfolio site, please feel free to peruse my work, as well you may also view my <a href="<?php echo URL.'Personal/Jean-Luc_Desroches_Resume_2013.pdf' ?>">Resume</a>, or contact me via email <a href="mailto:jean1880@hotmail.com">jean1880@hotmail.com</a>. I specialize in PHP scripting, and integration with HTML and Javascript/JQuery through AJAX data requests or PHP server POST, and Get communication. I am also experienced with development in JAVA, C++, C# and Python.</p>
         </div>
     </section>
     <script type="text/javascript">

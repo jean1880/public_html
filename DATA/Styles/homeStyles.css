@@ -42,3 +42,8 @@ h1
 	color:black;
 	font-weight:bold;
 }
+#wrapper #header
+{
+	position:relative;
+	margin:0;
+}
