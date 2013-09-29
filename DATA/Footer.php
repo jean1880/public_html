@@ -11,4 +11,5 @@
             </p>
         </footer>
 	</body>
+    <!-- This page, and all content and designs therein are property of Jean-Luc Desroches. If you wish to use any content from this page, you are free to do so, however please reference me in your code -->
 </html>

@@ -4,11 +4,12 @@ check the browser user agent string for mobile browser keywords
  */
 class mobileCheck
 {
+	// empty constructor, curerntly program is used only as static object
 	public function __constructor()
 	{
 		
 	}
-	
+	// the function checks the browsers user agent string to check if the accessing medium is mobile, or desktop, returns true if mobile, false if desktop
 	public static function checkBrowser()
 	{
 		$iphone 	= strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
