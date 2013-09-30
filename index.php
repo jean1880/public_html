@@ -47,7 +47,9 @@
         </div>
         <div id="content">
             <h2>Welcome</h2>
+            
             <p>This is my personal portfolio site, please feel free to peruse my work, as well you may also view my <a href="<?php echo URL.'Personal/Jean-Luc_Desroches_Resume_2013.pdf' ?>">Resume</a>, or contact me via email <a href="mailto:jean1880@hotmail.com">jean1880@hotmail.com</a>. I specialize in PHP scripting, and integration with HTML and Javascript/JQuery through AJAX data requests or PHP server POST, and Get communication. I am also experienced with development in JAVA, C++, C# and Python.</p>
+            <blockquote>Vir sapit qui pauca loquitur – Unknown</blockquote>
         </div>
     </section>
     <script type="text/javascript">
