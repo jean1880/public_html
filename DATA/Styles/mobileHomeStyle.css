@@ -42,3 +42,18 @@ h1
 	margin-left:auto;
 	margin-right:auto;
 }
+#header
+{
+	margin-left:auto;
+	margin-right:auto;
+	color:white;
+	text-align:center;
+}
+a.nivo-prevNav
+{
+	visibility:hidden;
+}
+a.nivo-nextNav
+{
+	visibility:hidden;
+}

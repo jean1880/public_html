@@ -6,10 +6,12 @@
 	<script src="<?php echo URL ?>DATA/nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script> 
     <!-- Include the theme stylesheet in the <head> section -->  
 	<link rel="stylesheet" href="DATA/nivo-slider/themes/dark/dark.css" type="text/css" /> 
+    <script type="text/javascript" src="DATA/JavaScripts/nivo.js"></script>
 <?php
 	if($mobile)
 	{
 		echo '<style rel="stylesheet" href="DATA/Styles/mobileHomeStyle.css" type="text/css" ></style>';
+		echo '<script type="text/javascript" src="DATA/JavaScripts/mobile.nivo.js"></script>';
 	}
 	else
 	{
@@ -51,24 +53,7 @@
             <p>This is my personal portfolio site, please feel free to peruse my work, as well you may also view my <a href="<?php echo URL.'Personal/Jean-Luc_Desroches_Resume_2013.pdf' ?>">Resume</a>, or contact me via email <a href="mailto:jean1880@hotmail.com">jean1880@hotmail.com</a>. I specialize in PHP scripting, and integration with HTML and Javascript/JQuery through AJAX data requests or PHP server POST, and Get communication. I am also experienced with development in JAVA, C++, C# and Python.</p>
             <blockquote>Vir sapit qui pauca loquitur – Unknown</blockquote>
         </div>
-    </section>
-    <script type="text/javascript">
-    	$(window).load(function() {
-			$('#slider').nivoSlider({
-				effect: 'fade',               // Specify sets like: 'fold,fade,sliceDown'
-				animSpeed: 500,                 // Slide transition speed
-				pauseTime: 5000,                // Set starting Slide (0 index)
-				directionNav: false,             // Next & Prev navigation
-				controlNav: true,               // 1,2,3... navigation
-				controlNavThumbs: false,        // Use thumbnails for Control Nav
-				pauseOnHover: false,             // Stop animation while hovering
-				manualAdvance: false,           // Force manual transitions
-				prevText: 'Prev',               // Prev directionNav text
-				nextText: 'Next',               // Next directionNav text
-				randomStart: true,             // Start on a random slide
-			});
-		});
-    </script>
+    </section>    
 <?php
 	include('DATA/Footer.php');
 ?>

@@ -3,6 +3,7 @@
 	$mobile = mobileCheck::checkBrowser();
 	?>
     <title>Advanced Web Programming - Lab 1</title>
+    <script src="Scripts/cardScript.js" ></script>
     <?php
 	
 	// Output style sheets between header files, if mobile add the mobile modifying css
@@ -16,6 +17,9 @@
 <div id="section">
 	<h1 id="header">My Card</h1>
     <div id="padding">
+    	<div class="javabutton" id="showHide" >
+        	<p id="javatext">Hide Card</p>
+        </div>
         <div id="card">
             <div id="border">
                 <section">

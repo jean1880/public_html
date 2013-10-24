@@ -1,14 +1,15 @@
 <?php
 	require_once('GLOBALS.php');
 ?>
-<nav>
+<nav data-role="header">
     <ul >
-        <li class='first' >
+        <li class='first' data-role="navbar">
             <span><a href="<?php echo URL.'index.php' ?>" itemprop="url">Home</a></span>
         </li>
-        <li class='first'><span>Project Websites</span>
+        
+        <li class='first' data-role="navbar"><span class="span"><a>Project Websites</a></span>
             <ul class='second'>
-                <li class='secondList' id="IntrotoHTMLClass" ><span class="subLink_1">Semester 1 - Intro to Html</span>
+                <li class='secondList' id="IntrotoHTMLClass" ><span class="subLink_1"><a>Semester 1 - Intro to Html</a></span>
                     <ul class="third">
                         <?php
                             $url		= 'IntrotoHTMLClass/';
@@ -26,7 +27,7 @@
                         ?>
                     </ul>
                 </li>
-                <li class='secondList'><span class="subLink_1">Semester 2 - Intro to Web Programming</span>
+                <li class='secondList'><span class="subLink_1"><a>Semester 2 - Intro to Web Programming</a></span>
                     <ul class="third">
                         <?php
                             $url		= 'WebProgrammingClass/';
@@ -44,7 +45,7 @@
                         ?>
                     </ul>
                 </li>
-                <li class='secondList'><span class="subLink_1">Semester 4 - Advanced Web Programming</span>
+                <li class='secondList'><span class="subLink_1"><a>Semester 4 - Advanced Web Programming</a></span>
                     <ul class="third">
                         <?php
                             $url		= 'AdvancedWebProgrammingClass/';
@@ -64,20 +65,20 @@
                 </li>
             </ul>
         </li>
-        <li class='first'><span>Personal Documents</span>
+        <li class='first' data-role="navbar"><span class="span"><a>Personal Documents</a></span>
             <ul class='second'>
-                <li class='secondList'><span class="subLink_1">Resume</span>
+                <li class='secondList'><span class="subLink_1"><a>Resume</a></span>
                     <ul class='third'>
                         <li><a href="<?php echo URL.'Personal/Jean-Luc_Desroches_Resume_2013.pdf' ?>" target="_blank">Resume - 2013</a></li>
                     </ul>
                 </li>
-                <li class='secondList'><span class="subLink_1">Course Outlines</span>
+                <li class='secondList'><span class="subLink_1"><a>Course Outlines</a></span>
                     <ul class='third'>
                         <li><a>Fall 2012</a></li>
                         <li><a>Winter 2013</a></li>
                     </ul>
                 </li>
-                <li class='secondList'><span class="subLink_1">Program Outline</span>
+                <li class='secondList'><span class="subLink_1"><a>Program Outline</a></span>
                     <ul class='third'>
                         <li><a href="<?php echo URL.'Personal/COPA.PDF' ?>" target="_blank">Computer Programmer  Analyst(COPA)</a></li>
                     </ul>
@@ -85,7 +86,7 @@
                 
             </ul>
         </li>        
-        <li class='first'>
+        <li class='first' data-role="navbar">
         	<a href="<?php echo URL.'about-me.php' ?>">About Me</a>
         </li>
         <img id="myLogo" src="<?php echo URL.'DATA/Logos/logoThumb.png' ?>" alt="My Logo"/>

@@ -58,6 +58,7 @@
 				'.',
 				'..',
 				'Styles',
+				'Scripts',
 				'DATA',
 				'images',
 				'photos',

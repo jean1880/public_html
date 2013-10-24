@@ -15,10 +15,9 @@
         <meta name="robots" content="index, follow">
         <meta name="revisit-after" content="1 month">
         <title>Jean-Luc Desroches Profile</title>
-        <!-- Jean-Luc, Desroches, Profile -->
+        <!-- Jean-Luc, Desroches, Profile -->  
 
-        <script type="text/javascript" language="javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script type="text/javascript" language="javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script></script> 
+        
          <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
         <?php
 			/*
@@ -26,11 +25,15 @@
 			 mobile css and appropriate jquery ui, else output desktop css 
 			 */
 			$mobile = mobileCheck::checkBrowser();
+			echo '<script src="'.URL.'DATA/JavaScripts/jquery-2.0.0.min.js"></script>';
 			echo '<link href="'.URL.'DATA/Styles/footerStyle.css" rel="stylesheet" type="text/css">';
 			
 			
 			if ($mobile) 
 			{ 
+				echo '<link href="'.URL.'DATA/Styles/jquery.mobile-1.3.2.min.css" rel="stylesheet" type="text/css">';
+				echo '<script src="'.URL.'DATA/JavaScripts/jquery.mobile-1.3.2.min.js"></script>';
+				echo '<link href="'.URL.'DATA/Styles/jquery-mobile-theme-190452-0/themes/Alpha-dark.min.css" rel="stylesheet" type="text/css">';
 				echo '<link href="'.URL.'DATA/Styles/mobileNavStyle.css" rel="stylesheet" type="text/css">';
 				echo '<script src="'.URL.'DATA/JavaScripts/NavMenu.js" type="text/javascript" language="javascript"></script>';
 			}

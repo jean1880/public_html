@@ -106,8 +106,7 @@ nav span
 	z-index:10;
 }
 .secondList, .third li
-{
-	
+{	
 	-webkit-transition: all .5s ease;
 	-moz-transition: all .5s ease;
 	-ms-transition: all .5s ease;
