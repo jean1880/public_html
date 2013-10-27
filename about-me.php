@@ -8,7 +8,11 @@
 <div itemscope itemtype="http://data-vocabulary.org/Person" id="section">
 	<h1 id="header">About Me</h1>
     <div id="wrapper">
-    	<img id="self" src="<?PHP echo URL."DATA/images/me.jpg" ?>" alt="Picture of me"/>
+    	<div class="slider-wrapper theme-dark">
+        	<div id="slider" class="nivoSlider">
+    			<img id="self" src="<?PHP echo URL."DATA/images/me.jpg" ?>" alt="Picture of me"/>
+            </div>
+        </div>
     </div>
     <section>
     	<p>Through knowledge we gain power, through wisdom we gain the ability to yield our strengths. This concept has guided me through my life, and has driven me to learn all that I can, and contemplate, life, and the values most dear to it. </p>

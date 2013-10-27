@@ -8,26 +8,26 @@ nav li
 {
 	list-style:none;
 	text-align:center;
-	display:block;
+	display:inline-block;
 	font-size:34px;
-	margin:10px;
+	width:100%;
 	padding:5px;
+}
+.ui-btn
+{
+	margin:2px;
 }
 nav .secondList
 {
 	display:block;
-	clear:both;
-	margin-left:auto;
-	margin-right:auto;
-	float:none;
-}
-.ui-grid-b>:nth-child(n)
-{
-	margin-right:auto;
 }
 #currentLocation
 {
 	display:none;
+}
+.span a
+{
+	margin:2px;
 }
 /*	color:white;
 	border:thin solid #616161;
@@ -62,8 +62,6 @@ nav a
 .ui-navbar .second, .ui-navbar .third
 {
 	display:none;
-	margin:0;
-	padding:0;
 }
 /*
 nav

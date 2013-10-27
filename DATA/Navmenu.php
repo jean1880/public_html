@@ -1,10 +1,11 @@
-<?php
-	require_once('GLOBALS.php');
-?>
 <nav data-role="header">
     <ul >
         <li class='first' data-role="navbar">
-            <span><a href="<?php echo URL.'index.php' ?>" itemprop="url">Home</a></span>
+            <span><a data-ajax="false" href="<?php echo URL.'index.php' ?>" itemprop="url">Home</a></span>
+        </li>
+        
+        <li class='first' data-role="navbar">
+            <span><a data-ajax="false" href="<?php echo URL.'services.php' ?>" itemprop="url">Services</a></span>
         </li>
         
         <li class='first' data-role="navbar"><span class="span"><a>Project Websites</a></span>
@@ -20,7 +21,7 @@
                                 if(!in_array($filename,nonReturnList()))
                                 {
                                 ?>
-                                    <li><a href="<?php echo URL.$url.$filename ?>"><?php echo fileStripper($filename) ?></a></li>
+                                    <li><a data-ajax="false" href="<?php echo URL.$url.$filename ?>"><?php echo fileStripper($filename) ?></a></li>
                                 <?php
                                 }
                             }
@@ -38,7 +39,7 @@
                                 if(!in_array($filename,nonReturnList()))
                                 {
                                 ?>
-                                    <li><a href="<?php echo URL.$url.$filename ?>"><?php echo fileStripper($filename) ?></a></li>
+                                    <li><a data-ajax="false" href="<?php echo URL.$url.$filename ?>"><?php echo fileStripper($filename) ?></a></li>
                                 <?php
                                 }
                             }
@@ -56,7 +57,7 @@
                                 if(!in_array($filename,nonReturnList()))
                                 {
                                 ?>
-                                    <li><a href="<?php echo URL.$url.$filename ?>"><?php echo fileStripper($filename) ?></a></li>
+                                    <li><a data-ajax="false" href="<?php echo URL.$url.$filename ?>"><?php echo fileStripper($filename) ?></a></li>
                                 <?php
                                 }
                             }
@@ -85,10 +86,25 @@
                 </li>
                 
             </ul>
-        </li>        
+        </li>  
+        <?php 
+        if($mobile && !$_SESSION['fullSite'])
+        {
+			?>
+            <li class='first' data-role="navbar">
+                <a  data-ajax="false" href="<?php echo  URL.'?full=1' ?>">Full Site</a>
+            </li>
+            <li class='first' data-role="navbar">
+                <a data-ajax="false" data-rel="back" >Back</a>
+            </li>
+            <?php
+        }
+		?>
+        
         <li class='first' data-role="navbar">
-        	<a href="<?php echo URL.'about-me.php' ?>">About Me</a>
+        	<a data-ajax="false" href="<?php echo URL.'about-me.php' ?>">About Me</a>
         </li>
+        
         <img id="myLogo" src="<?php echo URL.'DATA/Logos/logoThumb.png' ?>" alt="My Logo"/>
         <div id="currentLocation">
         	<?php 
