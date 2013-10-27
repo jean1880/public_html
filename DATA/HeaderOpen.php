@@ -2,7 +2,7 @@
 <html>
 
     <head profile="http://www.w3.org/2005/10/profile">
-        <!-- Designed, developed, and coded by Jean-Luc Desroches -->
+        <!-- This website was Designed, developed, and coded by Jean-Luc Desroches -->
         
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <!-- made by www.metatags.org -->
@@ -27,13 +27,16 @@
 			echo '<link rel="icon" href="'.URL.'DATA/Logos/logo_address.png" type="image/png">';
 			
 			session_start();	
-			if($_GET["full"] == 1)
-			{				
-				$_SESSION['fullSite'] = true;
-			}
-			elseif($_GET["full"] == 0)
-			{				
-				$_SESSION['fullSite'] = false;
+			if(isset($_GET["full"]))
+			{
+				if($_GET["full"] == 1)
+				{				
+					$_SESSION['fullSite'] = true;
+				}
+				elseif($_GET["full"] == 0)
+				{				
+					$_SESSION['fullSite'] = false;
+				}
 			}
 			if ($mobile && !($_SESSION['fullSite'])) 
 			{ 

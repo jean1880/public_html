@@ -14,4 +14,22 @@ $(document).ready(function(){
 		}
 		$toggle = !$toggle;
 	});
+	
+	$.ajax({
+		url: "Scripts/text_generation.xml",
+		dataType: "xml",
+		success:function(data) {
+			var xmlDoc 	= $.parseXML(data),
+			$xml 	= $(data),
+			$cost 	= $xml.find("cost"),
+			$lvl	= $xml.find("lvl"),
+			$photo	= $xml.find("photo"),
+			$text	= $xml.find("text");
+			$("#cost").text($cost.text());
+			$("#lvl").text($lvl.text());
+			$("#photo").attr("src",$photo.text());
+			$("#text").text($text.text());	
+		}
+	});
+
 });

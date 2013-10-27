@@ -1,3 +1,4 @@
+<!-- Navigation menu -->
 <nav data-role="header">
     <ul >
         <li class='first' data-role="navbar">
@@ -13,6 +14,9 @@
                 <li class='secondList' id="IntrotoHTMLClass" ><span class="subLink_1"><a>Semester 1 - Intro to Html</a></span>
                     <ul class="third">
                         <?php
+							/*
+								Set file variables and loop through each file in the folder and create a link to output to the menu
+							*/
                             $url		= 'IntrotoHTMLClass/';
                             $dirName 	= HOME_DIR.$url;
                             $dir 		= opendir($dirName);
@@ -31,6 +35,9 @@
                 <li class='secondList'><span class="subLink_1"><a>Semester 2 - Intro to Web Programming</a></span>
                     <ul class="third">
                         <?php
+							/*
+								Set file variables and loop through each file in the folder and create a link to output to the menu
+							*/
                             $url		= 'WebProgrammingClass/';
                             $dirName 	= HOME_DIR.$url;
                             $dir 		= opendir($dirName);
@@ -49,6 +56,9 @@
                 <li class='secondList'><span class="subLink_1"><a>Semester 4 - Advanced Web Programming</a></span>
                     <ul class="third">
                         <?php
+							/*
+								Set file variables and loop through each file in the folder and create a link to output to the menu
+							*/
                             $url		= 'AdvancedWebProgrammingClass/';
                             $dirName 	= HOME_DIR.$url;
                             $dir 		= opendir($dirName);
@@ -88,11 +98,14 @@
             </ul>
         </li>  
         <?php 
+		/*
+			If viewer is on mobile, display additional buttons for mobile menu
+		*/
         if($mobile && !$_SESSION['fullSite'])
         {
 			?>
             <li class='first' data-role="navbar">
-                <a  data-ajax="false" href="<?php echo  URL.'?full=1' ?>">Full Site</a>
+                <a  data-ajax="false" href="<?php echo  $_SERVER['PHP_SELF'].'?full=1' ?>">Full Site</a>
             </li>
             <li class='first' data-role="navbar">
                 <a data-ajax="false" data-rel="back" >Back</a>
@@ -108,6 +121,9 @@
         <img id="myLogo" src="<?php echo URL.'DATA/Logos/logoThumb.png' ?>" alt="My Logo"/>
         <div id="currentLocation">
         	<?php 
+				/*
+					Create breadcrumb system to display to the user
+				*/
 				$location 	= str_replace(HOME_DIR, '', $_SERVER["SCRIPT_FILENAME"]); 
 				$breadCrumb = explode('/',$location);
 				foreach($breadCrumb as $key => $file)

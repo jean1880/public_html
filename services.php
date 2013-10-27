@@ -1,6 +1,7 @@
 <?php
 	include('DATA/HeaderOpen.php');
 ?>
+	<title>Services</title>
 	<link rel="stylesheet" href="DATA/Styles/about.css" type="text/css" /> 
     <style>
 		.embeded-link:visited
@@ -13,6 +14,7 @@
 ?>
 <div itemscope itemtype="http://data-vocabulary.org/Person" id="section">
 	<h1 id="header">Services</h1>
+    <!-- Services offered by me -->
     <section>
     	<p>As a Junior Web Developer/ Programmer I can offer a wide range of services to advance your company. From web development, database management and design, to software development for a wide variety of mobile and desktop operating systems.</p>
         <p>Experienced with:
