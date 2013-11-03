@@ -14,6 +14,12 @@
 ?>
 <nav data-role="header" id="navbar">
     <ul>
+    <?php
+    if($mobile && !$_SESSION['fullSite'])
+	{
+		echo '<div id="mobilenavgrouper">';
+	}
+	?>
         <li class='first' data-role="navbar" id="home">
             <span><a data-ajax="false" href="<?php echo URL.'index.php' ?>" itemprop="url">
 				<?php 
@@ -61,10 +67,10 @@
         </li>
         
         <li class='first' data-role="navbar" id="projects">
-        <span class="span"><a <?php echo 'data-ajax="false" href="'.URL.'m.projects.php"'; ?> >
+        <span class="span"><a <?php if($mobile && !$_SESSION['fullSite']){echo 'data-ajax="false" href="'.URL.'m.projects.php"'; }?> >
         	<?php
 				// if on main site display link as text, else display as image
-				 if(!$mobile)
+				 if(!$mobile || $_SESSION['fullSite'])
 				 {
 			?>
             	Project Websites
@@ -80,7 +86,7 @@
                 </a></span>
         	<?php
 				
-				 if(!$mobile)
+				 if(!$mobile && !$_SESSION['fullSite'])
 				 {
 			?>
             <ul class='second'>
@@ -152,6 +158,12 @@
 				 }
 			?>
         </li>
+        <?php
+		if(!$mobile && !$_SESSION['fullSite'])
+		{
+			echo '</div>';
+		}
+		?>
         <li class='first' data-role="navbar"><span class="span"><a>Personal Documents</a></span>
             <ul class='second'>
                 <li class='secondList'><span class="subLink_1"><a>Resume</a></span>
