@@ -21,11 +21,11 @@
 			 mobile css and appropriate jquery ui, else output desktop css 
 			 */
 			$mobile = mobileCheck::checkBrowser();
-			?>
-			<script src="'.URL.'DATA/JavaScripts/jquery-2.0.0.min.js"></script>
-			<link href="'.URL.'DATA/Styles/footerStyle.css" rel="stylesheet" type="text/css">
-			<link rel="icon" href="'.URL.'DATA/Logos/logo_address.png" type="image/png">
-            <?php			
+			
+			echo '<script src="'.URL.'DATA/JavaScripts/jquery-2.0.0.min.js"></script>';
+			echo '<link href="'.URL.'DATA/Styles/footerStyle.css" rel="stylesheet" type="text/css">';
+			echo '<link rel="icon" href="'.URL.'DATA/Logos/logo_address.png" type="image/png">';
+            		
 			session_start(); // start session for mobile detection saving
 			// check whether user has sent a request for the full site through the url
 			if(isset($_GET["full"]))
