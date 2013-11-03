@@ -6,7 +6,7 @@
 				<a class="g-person" data-href="https://plus.google.com/u/0/117607326167866249817" href="https://plus.google.com/u/0/117607326167866249817?rel=author">
                 	<img  src="<?php echo URL ?>DATA/Logos/gplus-32.png" width="26" height="26"></img>
                 </a>
-                <a href="<?php echo URL."contact-me.php" ?>">Contact Me</a>                
+                <a data-ajax="false" href="<?php echo URL."contact-me.php" ?>">Contact Me</a>                
                 
             </p>
         </footer>

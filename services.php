@@ -48,7 +48,7 @@
                </li>         
             </ul>
         </p>
-        <p><a class="embeded-link" href="<?php echo URL."contact-me.php" ?>">Contact Me</a> to learn more. </p>
+        <p><a data-ajax="false" class="embeded-link" href="<?php echo URL."contact-me.php" ?>">Contact Me</a> to learn more. </p>
     </section>
 </div>
 <?php
