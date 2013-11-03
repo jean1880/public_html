@@ -11,7 +11,6 @@
         <meta name="author" content="metatags generator">
         <meta name="robots" content="index, follow">
         <meta name="revisit-after" content="1 month">
-        <title>Jean-Luc Desroches Profile</title>
         <!-- Jean-Luc, Desroches, Profile -->          
         <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
         <?php

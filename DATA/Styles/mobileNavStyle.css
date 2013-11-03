@@ -1,4 +1,26 @@
 /* CSS Document */
+#navIcon {
+	position: fixed;
+	background:#616161;
+	z-index:99;
+	left:-15px;
+	
+}
+#navIcon img
+{
+	display:block;
+	width:75px;
+	height:75px;	
+	z-index:100;
+}
+html
+{
+	font-size:2em!important;
+}
+nav 
+{
+	display:none;
+}
 nav ul
 {
 	padding:0;
@@ -83,6 +105,15 @@ nav
 	width:100px;
 	margin-left:auto;
 	margin-right:auto;
+}
+#home, #services, #projects
+{
+	display:inline-block;
+	width:100px;
+}
+#home span, #services span, #projects span
+{
+	height:130px;
 }
 /* Smartphones (portrait and landscape) ----------- */
 @media 

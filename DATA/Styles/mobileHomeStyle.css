@@ -1,16 +1,5 @@
 /* CSS Document */
 
-#section 
-{
-	display:block;
-	width:80%;
-	margin-left:auto;
-	margin-right:auto;
-	margin-bottom:20px;
-	background:white;
-	border:black solid medium;
-	border-radius:10px;
-}
 .slider-wrapper
 {
 	max-height:600px;
@@ -46,7 +35,7 @@ h1
 {
 	margin-left:auto;
 	margin-right:auto;
-	color:white;
+	color:white !important;
 	text-align:center;
 }
 a.nivo-prevNav
@@ -56,4 +45,8 @@ a.nivo-prevNav
 a.nivo-nextNav
 {
 	visibility:hidden;
+}
+li span
+{
+	width: 90%;
 }

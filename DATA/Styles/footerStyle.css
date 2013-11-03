@@ -1,4 +1,15 @@
 /* CSS Document */
+#section 
+{
+	display:block;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+	background:white;
+	border:black solid medium;
+	border-radius:10px;
+}
 footer
 {
 	background: #222;

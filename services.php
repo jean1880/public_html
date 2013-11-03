@@ -2,7 +2,7 @@
 	include('DATA/HeaderOpen.php');
 ?>
 	<title>Services</title>
-	<link rel="stylesheet" href="DATA/Styles/about.css" type="text/css" /> 
+	<link rel="stylesheet" href="DATA/Styles/services.css" type="text/css" /> 
     <style>
 		.embeded-link:visited
 		{
@@ -12,7 +12,7 @@
 <?php
 	include(HOME_DIR.'DATA/HeaderClose.php');
 ?>
-<div itemscope itemtype="http://data-vocabulary.org/Person" id="section">
+<div id="section" itemscope itemtype="http://data-vocabulary.org/Person" >
 	<h1 id="header">Services</h1>
     <!-- Services offered by me -->
     <section>

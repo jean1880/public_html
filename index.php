@@ -8,9 +8,9 @@
 	<link rel="stylesheet" href="DATA/nivo-slider/themes/dark/dark.css" type="text/css" /> 
     <script type="text/javascript" src="DATA/JavaScripts/nivo.js"></script>
 <?php
-	if($mobile && !($_SESSION['fullSite']))
+	if($mobile)
 	{
-		echo '<style rel="stylesheet" href="DATA/Styles/mobileHomeStyle.css" type="text/css" ></style>';
+		echo '<link rel="stylesheet" href="DATA/Styles/mobileHomeStyle.css" type="text/css" >';
 		echo '<script type="text/javascript" src="DATA/JavaScripts/mobile.nivo.js"></script>';
 	}
 	else
@@ -21,7 +21,7 @@
 	include('DATA/HeaderClose.php');
  ?>        
     <section id="section">
-        <h1 id="header">Jean-Luc Desroches's Portfolio</h1>
+        <h1 class="header">Jean-Luc Desroches' Portfolio</h1>
         <div id="wrapper">
             <div class="slider-wrapper theme-dark">
             	<h1 id="header">Previous Projects</h1>
@@ -42,6 +42,9 @@
                     ?>
                 </div>
             </div>
+        </div>
+        <div id="htmlcaption" class="nivo-html-caption">
+        	test
         </div>
         </div>
         <div id="content">

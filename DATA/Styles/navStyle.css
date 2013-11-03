@@ -113,10 +113,15 @@ nav span
 	-o-transition: all .5s ease;
 	transition: all .5s ease;
 }
-.third{
-	position:relative;
+.third
+{
+	margin-top:-20px;
 	left:385px;
 	border-top-right-radius:5px;
+}
+.third li
+{
+	margin-right:5px;
 }
 .first:hover, .secondList:hover, .third li:hover
 {

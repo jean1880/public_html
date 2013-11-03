@@ -1,15 +1,88 @@
 <!-- Navigation menu -->
-<nav data-role="header">
-    <ul >
-        <li class='first' data-role="navbar">
-            <span><a data-ajax="false" href="<?php echo URL.'index.php' ?>" itemprop="url">Home</a></span>
+<?php 
+		/*
+			If viewer is on mobile, display additional buttons for mobile menu
+		*/
+        if($mobile && !$_SESSION['fullSite'])
+        {
+			?>
+            <div id="navIcon">
+				<img  src="<?php  echo URL.'DATA/Logos/menuIcon.png' ?>" />
+            </div>
+            <?php
+		}
+?>
+<nav data-role="header" id="navbar">
+    <ul>
+        <li class='first' data-role="navbar" id="home">
+            <span><a data-ajax="false" href="<?php echo URL.'index.php' ?>" itemprop="url">
+				<?php 
+                /*
+                    If viewer is on mobile, image for home button else display text
+                */
+                if($mobile && !$_SESSION['fullSite'])
+                {
+                    ?>
+                    <img src="<?php  echo URL.'DATA/Logos/Home-icon.png' ?>" alt="Home" width="100" height="100" />
+                    <?php
+                }
+                else
+                {
+                    ?>
+                    Home
+                    <?php
+                }
+                ?>
+                </a>
+            </span>
         </li>
         
-        <li class='first' data-role="navbar">
-            <span><a data-ajax="false" href="<?php echo URL.'services.php' ?>" itemprop="url">Services</a></span>
+        <li class='first' data-role="navbar" id="services">
+            <span><a data-ajax="false" href="<?php echo URL.'services.php' ?>" itemprop="url">
+            <?php 
+                /*
+                    If viewer is on mobile, image for home button else display text
+                */
+                if($mobile && !$_SESSION['fullSite'])
+                {
+                    ?>
+                    <img src="<?php  echo URL.'DATA/Logos/services.png' ?>" alt="Home" width="100" height="120" />
+                    <?php
+				}
+                    else
+                {
+                    ?>
+                    Services
+                <?php
+				}
+                ?>
+                </a>
+            </span>
         </li>
         
-        <li class='first' data-role="navbar"><span class="span"><a>Project Websites</a></span>
+        <li class='first' data-role="navbar" id="projects">
+        <span class="span"><a <?php echo 'data-ajax="false" href="'.URL.'m.projects.php"'; ?> >
+        	<?php
+				// if on main site display link as text, else display as image
+				 if(!$mobile)
+				 {
+			?>
+            	Project Websites
+            <?php
+				 }
+				 else
+				 {
+			?>
+            	<img src="<?php  echo URL.'DATA/Logos/Portfolio.png' ?>" alt="Home" width="100" height="100" />
+            <?php
+				 }
+			?>
+                </a></span>
+        	<?php
+				
+				 if(!$mobile)
+				 {
+			?>
             <ul class='second'>
                 <li class='secondList' id="IntrotoHTMLClass" ><span class="subLink_1"><a>Semester 1 - Intro to Html</a></span>
                     <ul class="third">
@@ -75,6 +148,9 @@
                     </ul>
                 </li>
             </ul>
+            <?php 
+				 }
+			?>
         </li>
         <li class='first' data-role="navbar"><span class="span"><a>Personal Documents</a></span>
             <ul class='second'>
