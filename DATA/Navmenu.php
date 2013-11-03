@@ -1,5 +1,11 @@
 <!-- Navigation menu -->
 <?php 
+	/*
+		@Author Jean-Luc Desroches
+		
+		This generates the navigation system for the website, utilizing the mobile detection 
+		system to display appropriate content for full website and mobile
+	*/
 		/*
 			If viewer is on mobile, display additional buttons for mobile menu
 		*/
@@ -86,7 +92,7 @@
                 </a></span>
         	<?php
 				
-				 if(!$mobile && !$_SESSION['fullSite'])
+				 if(!$mobile || $_SESSION['fullSite'])
 				 {
 			?>
             <ul class='second'>

@@ -1,7 +1,7 @@
 <?php
 	include('DATA/HeaderOpen.php');	
 ?>    
-	<title>Home</title>
+	<title>Jean-Luc Desroches - Home</title>
 	<link rel="stylesheet" href="<?php echo URL ?>DATA/nivo-slider/nivo-slider.css" type="text/css" />
 	<script src="<?php echo URL ?>DATA/nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script> 
     <!-- Include the theme stylesheet in the <head> section -->  

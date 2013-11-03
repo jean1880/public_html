@@ -1,7 +1,7 @@
 <?php
 	include('DATA/HeaderOpen.php');
 ?>
-	<title>Services</title>
+	<title>Jean-Luc Desroches - Services</title>
 	<link rel="stylesheet" href="DATA/Styles/services.css" type="text/css" /> 
     <style>
 		.embeded-link:visited

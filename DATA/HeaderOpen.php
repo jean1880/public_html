@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
     <head profile="http://www.w3.org/2005/10/profile">
         <!-- This website was Designed, developed, and coded by Jean-Luc Desroches -->
         
@@ -14,6 +13,12 @@
         <!-- Jean-Luc, Desroches, Profile -->          
         <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
         <?php
+			/*
+				@Author Jean-Luc Desroches
+				
+				This file opens the main header content and loads global files 
+				for every page. Must be included with every page to allow for full functionality
+			*/
 			include('GLOBALS.php');
 			include('checkMobile.php');
 			/*

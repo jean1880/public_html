@@ -1,7 +1,7 @@
 <?php
 	include('DATA/HeaderOpen.php');
 ?>
-	<title>Projects</title>
+	<title>Jean-Luc Desroches - Projects</title>
     <style>
 		nav
 		{

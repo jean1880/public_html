@@ -1,6 +1,7 @@
 <?php
 	include('/home/200176338/public_html/DATA/HeaderOpen.php');
 ?>
+	<title> Jean-Luc Desroches - Contact Me</title>
 	<link rel="stylesheet" href="<?php echo URL ?>DATA/Styles/contact-me.css" type="text/css" />
 <?php
 	include(HOME_DIR.'DATA/HeaderClose.php');

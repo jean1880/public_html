@@ -1,7 +1,7 @@
 <?php
 	include('DATA/HeaderOpen.php');
 ?>
-	<title>About Me</title>
+	<title>Jean-Luc Desroches - About Me</title>
 	<link rel="stylesheet" href="DATA/Styles/about.css" type="text/css" /> 
 <?php
 	include(HOME_DIR.'DATA/HeaderClose.php');
