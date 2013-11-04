@@ -165,7 +165,7 @@
 			?>
         </li>
         <?php
-		if(!$mobile && !$_SESSION['fullSite'])
+		if($mobile && !$_SESSION['fullSite'])
 		{
 			echo '</div>';
 		}

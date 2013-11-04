@@ -10,10 +10,19 @@
 		}
     </style>
 <?php
+	if($mobile)
+	{
+		echo '<link rel="stylesheet" href="DATA/Styles/mobileHomeStyle.css" type="text/css" >';
+		echo '<script type="text/javascript" src="DATA/JavaScripts/mobile.nivo.js"></script>';
+	}
+	else
+	{
+		echo '<link href="'.URL.'DATA/Styles/homeStyles.css" rel="stylesheet" type="text/css">';
+	}
 	include(HOME_DIR.'DATA/HeaderClose.php');
 ?>
 <div id="section" itemscope itemtype="http://data-vocabulary.org/Person" >
-	<h1 id="header">Services</h1>
+	<h1 class="header">Services</h1>
     <!-- Services offered by me -->
     <section>
     	<p>As a Junior Web Developer/ Programmer I can offer a wide range of services to advance your company. From web development, database management and design, to software development for a wide variety of mobile and desktop operating systems.</p>

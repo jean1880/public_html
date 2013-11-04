@@ -2,12 +2,25 @@
 	include('DATA/HeaderOpen.php');
 ?>
 	<title>Jean-Luc Desroches - About Me</title>
-	<link rel="stylesheet" href="DATA/Styles/about.css" type="text/css" /> 
+    <link rel="stylesheet" href="<?php echo URL ?>DATA/nivo-slider/nivo-slider.css" type="text/css" />
+	<script src="<?php echo URL ?>DATA/nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script> 
+    <!-- Include the theme stylesheet in the <head> section -->  
+	<link rel="stylesheet" href="DATA/nivo-slider/themes/dark/dark.css" type="text/css" /> 
+    <script type="text/javascript" src="DATA/JavaScripts/nivo.js"></script>
 <?php
+	if($mobile)
+	{
+		echo '<link rel="stylesheet" href="DATA/Styles/mobileHomeStyle.css" type="text/css" >';
+		echo '<script type="text/javascript" src="DATA/JavaScripts/mobile.nivo.js"></script>';
+	}
+	else
+	{
+		echo '<link href="'.URL.'DATA/Styles/homeStyles.css" rel="stylesheet" type="text/css">';
+	}
 	include(HOME_DIR.'DATA/HeaderClose.php');
 ?>
 <div itemscope itemtype="http://data-vocabulary.org/Person" id="section">
-	<h1 id="header">About Me</h1>
+	<h1 classes="header">About Me</h1>
     <div id="wrapper">
     	<div class="slider-wrapper theme-dark">
         	<div id="slider" class="nivoSlider">
