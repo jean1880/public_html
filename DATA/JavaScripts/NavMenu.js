@@ -1,6 +1,6 @@
 // JavaScript Document
 $(document).ready(function() {
-	$('#navIcon').click(function(){
+	$(document).on('click','#navIcon',function(){
 		if($('nav').css('display') == 'none')
 		{
 			$('nav').slideDown(500);
@@ -10,7 +10,7 @@ $(document).ready(function() {
 			$('nav').slideUp(500);
 		}
 	});
-    $('nav span').click(function(){
+    $(document).on('click','nav span',function(){
 		var nextUl = $(this).next('ul');
 		$(this).siblings().each(function(){
 			$(this).not(nextUl).fadeOut(250);

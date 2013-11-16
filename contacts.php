@@ -1,5 +1,6 @@
 <?php
 	include('DATA/HeaderOpen.php');
+	
 	include('DATA/HeaderClose.php');
 	if(isset($_SESSION['username']) && (isset($_SESSION[KEYNAME]) && $_SESSION[KEYNAME] == KEY))
 	{
@@ -8,7 +9,7 @@
         	<div id="section">
             	<?php
 					global $db;
-					$query = 'SELECT first_name, last_name, phone FROM contacts';
+					$query = 'SELECT first_name, last_name, phone FROM contacts ORDER BY first_name';
 					$result = $db->query($query);
 				?>
                 <table style="margin-left:auto; margin-right:auto;">
@@ -25,7 +26,7 @@
                                 	<tr>
                                     	<td><?php echo $row['first_name'] ?></td>
                                         <td><?php echo $row['last_name'] ?></td>
-                                       	<td><?php echo $row['phone'] ?></td>
+                                       	<td><a href="tel:<?php echo $row['phone'] ?>"><?php echo $row['phone'] ?></a></td>
                                     </tr>
                                 <?php
 							}

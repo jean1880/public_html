@@ -29,7 +29,7 @@
 ?>
     <section id="section"> 
 <?php	
-	if(!isset($loginFail) || $loginFail)
+	if(!isset($_SESSION['username']) && (!isset($loginFail) || $loginFail))
 	{
 ?>    
     	<form action="<?php echo $_SERVER['PHP_SELF'] ?>" id="login" method="post">
@@ -45,7 +45,7 @@
     
 <?php
 	}
-	if(isset($loginFail) && !$loginFail)
+	if(isset($_SESSION['username']) || (isset($loginFail) && !$loginFail))
 	{
 ?>
 	<p style="color:green; display:block; text-align:center;">Logged In Successfully</p>

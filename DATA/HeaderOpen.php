@@ -47,6 +47,15 @@ if(isset($_GET['logOut']))
 			}
 			echo '<link href="'.URL.'DATA/Styles/footerStyle.css" rel="stylesheet" type="text/css">';
 			echo '<link rel="icon" href="'.URL.'DATA/Logos/logo_address.png" type="image/png">';
+			echo '<script language="text/javascript">
+
+					  $(document).bind("mobileinit", function () {
+				
+							$.mobile.ajaxEnabled = false;
+				
+					  });
+				
+				</script>';
 			
 			// check whether user has sent a request for the full site through the url
 			if(isset($_GET["full"]))
