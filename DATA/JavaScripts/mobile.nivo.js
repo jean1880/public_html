@@ -1,12 +1,13 @@
 // JavaScript Document
 $(document).load(function(){
-	// detect if user is swiping left or right and display appropriate image
-	$("#wrapper").bind("swipeleft","ui-link",function() {
+	$(".nivo-imagelink").bind("swipeleft",function(e) {
 		$('.nivo-nextNav').trigger('click');
-		alert('test');
+		e.stopImmediatePropagation();
+		return false;		
 	});
-	$("#wrapper").bind("swiperight",".ui-link",function() {
+	$(".nivo-imagelink").bind("swiperight",function(e) {
 		$('.nivo-prevNav').trigger('click');
-		alert('testtest');
+		e.stopImmediatePropagation();
+		return false;
 	}); 
 });

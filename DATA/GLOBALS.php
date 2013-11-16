@@ -6,6 +6,15 @@
 	define('HOME_DIR',"/home/200176338/public_html/");
 	define('URL','http://webdesign4.georgianc.on.ca/~200176338/');
 	
+	// define MySQL login info
+	define('MYSQLUSERNAME','db200176338');
+	define('MYSQLPASSWORD','99939');
+	define('MYSQLDSN',"webdesign4.georgianc.on.ca");
+	define('DBNAME','db200176338');
+	define('KEY','KX;5Lz=nc4(.xz?h:xEW=?|]-WKU.');
+	define('KEYNAME','4b583b354c7a3d6e6334282e787a3f683a7845573d3f7c5d2d574b552e');
+	$db = new PDO('mysql:host='.MYSQLDSN.';dbname='.DBNAME, MYSQLUSERNAME, MYSQLPASSWORD);
+	
 	// strips file identifiers from the names of the files and formats them to be more human readable
 	function fileStripper($file)
 	{

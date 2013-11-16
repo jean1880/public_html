@@ -1,3 +1,16 @@
+<?php session_start(); // start session for mobile detection saving 
+if(isset($_GET['logOut']))
+{
+	if(isset($_SESSION['username']))
+	{
+	  unset($_SESSION['username']);
+	}
+	if(isset($_SESSION[KEYNAME]))
+	{
+	  unset($_SESSION[KEYNAME]);
+	}
+}
+?>
 <!DOCTYPE html>
 <html>
     <head profile="http://www.w3.org/2005/10/profile">
@@ -28,10 +41,13 @@
 			$mobile = mobileCheck::checkBrowser();
 			
 			echo '<script src="'.URL.'DATA/JavaScripts/jquery-2.0.0.min.js"></script>';
+			if(isset($_SESSION['username']) && (isset($_SESSION[KEYNAME]) && $_SESSION[KEYNAME] == KEY))
+			{
+				echo '<script src="'.URL.'DATA/JavaScripts/logOut.js"></script>';
+			}
 			echo '<link href="'.URL.'DATA/Styles/footerStyle.css" rel="stylesheet" type="text/css">';
 			echo '<link rel="icon" href="'.URL.'DATA/Logos/logo_address.png" type="image/png">';
-            		
-			session_start(); // start session for mobile detection saving
+			
 			// check whether user has sent a request for the full site through the url
 			if(isset($_GET["full"]))
 			{

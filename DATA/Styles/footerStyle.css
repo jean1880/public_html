@@ -35,6 +35,10 @@ footer a, footer a:visited
 	margin-left:40px;
 	right:25px;
 }
+#logOut
+{
+	margin-right:10px;
+}
 .g-person
 {
 	display:inline-block;

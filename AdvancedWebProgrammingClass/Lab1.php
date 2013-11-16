@@ -24,22 +24,52 @@
             <div id="border">
                 <section>
                     <p id="cost">
-                        
+                        <?php 
+							$result = $db->query("SELECT cost FROM Card LIMIT 1");
+							foreach($result as $row)
+							{
+								echo $row['cost'];
+							}
+						?>
                     </p>
                     <p id="lvl">
-                        
+                         <?php 
+							$result = $db->query("SELECT lvl FROM Card LIMIT 1");
+							foreach($result as $row)
+							{
+								echo $row['lvl'];
+							}
+						?>
                     </p>
                     
                 </section>
-                <img id="photo" src="">
+                <img id="photo" src="<?php 
+							$result = $db->query("SELECT photo FROM Card LIMIT 1");
+							foreach($result as $row)
+							{
+								echo $row['photo'];
+							}
+						?>">
                 <div id="description">
                     <p id="text">
-                        
+                        <?php 
+							$result = $db->query("SELECT text FROM Card LIMIT 1");
+							foreach($result as $row)
+							{
+								echo $row['text'];
+							}
+						?>
                     </p>                  
                 </div>
                 <span>
                     <p id="stats">
-                       
+                       <?php 
+							$result = $db->query("SELECT stats FROM Card LIMIT 1");
+							foreach($result as $row)
+							{
+								echo $row['stats'];
+							}
+						?>
                     </p>
                 </span>             
             </div>

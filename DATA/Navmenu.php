@@ -211,7 +211,14 @@
         <li class='first' data-role="navbar">
         	<a data-ajax="false" href="<?php echo URL.'about-me.php' ?>">About Me</a>
         </li>
-        
+        <?php
+			if(isset($_SESSION['username']) && (isset($_SESSION[KEYNAME]) && $_SESSION[KEYNAME] == KEY))
+			{?>
+				<li class='first' data-role="navbar">
+					<a data-ajax="false" href="<?php echo URL.'contacts.php' ?>">Contacts</a>
+				</li>
+			<?php }
+		?>
         <img id="myLogo" src="<?php echo URL.'DATA/Logos/logoThumb.png' ?>" alt="My Logo"/>
         <div id="currentLocation">
         	<?php 

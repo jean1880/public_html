@@ -7,7 +7,14 @@
                 	<img  src="<?php echo URL ?>DATA/Logos/gplus-32.png" width="26" height="26"></img>
                 </a>
                 <a data-ajax="false" href="<?php echo URL."contact-me.php" ?>">Contact Me</a>                
-                
+                <?php
+				if(isset($_SESSION['username']) && (isset($_SESSION[KEYNAME]) && $_SESSION[KEYNAME] == KEY))
+				{
+					?>
+                    	<a href="<?php echo $_SERVER['PHP_SELF'].'?logOut=true' ?>" id="logOut">Log Out</a>
+                    <?php
+				}
+				?>
             </p>
         </footer>
 	</body>
