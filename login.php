@@ -32,6 +32,7 @@
 	if(!isset($_SESSION['username']) && (!isset($loginFail) || $loginFail))
 	{
 ?>    
+		<!-- Login Form -->
     	<form action="<?php echo $_SERVER['PHP_SELF'] ?>" id="login" method="post">
         	<div>
             	<?php if($loginFail){ echo '<p style="color:red">Login Failed</p>';} ?>
@@ -39,7 +40,7 @@
                 <input type="text" autofocus autocomplete="on" name="username"><br>
                 <label for="password">Password:</label>
                 <input type="password" autocomplete="on" name="password"><br>
-                <input type="submit" name="submit" />
+                <input type="submit" name="submit" value="Submit" />
             </div>
         </form>
     
